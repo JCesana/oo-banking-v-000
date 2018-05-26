@@ -22,8 +22,8 @@ class Transfer
       @status = "complete"
       #binding.pry if amount == 4000
     else
-      "Transaction rejected. Please check your account balance."
       @status = "rejected"
+      "Transaction rejected. Please check your account balance."
       #binding.pry if amount == 4000
     end 
   end 

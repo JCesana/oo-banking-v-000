@@ -34,9 +34,7 @@ class Transfer
       sender.balance += amount
       receiver.balance -= amount 
       @status = "reversed"
-    else 
-      "There is no transaction to reverse."
-    end 
+    end
   end 
   
 end

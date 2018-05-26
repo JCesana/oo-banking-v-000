@@ -20,11 +20,11 @@ class Transfer
       sender.balance -= amount
       receiver.balance += amount
       @status = "complete"
-      binding.pry if amount == 4000
+      #binding.pry if amount == 4000
     else
       "Transaction rejected. Please check your account balance."
       @status = "rejected"
-      binding.pry if amount == 4000
+      #binding.pry if amount == 4000
     end 
   end 
   

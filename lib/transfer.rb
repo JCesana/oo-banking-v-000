@@ -1,3 +1,4 @@
+require 'pry'
 class Transfer
   attr_accessor :sender, :receiver, :amount, :status
   
@@ -11,6 +12,7 @@ class Transfer
   
   def valid?
     sender.valid? && receiver.valid? && sender.balance >= amount 
+    binding.pry 
   end 
   
   
